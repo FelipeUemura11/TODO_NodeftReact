@@ -27,8 +27,8 @@ export const TarefaService = {
         await api.delete(`/tarefas/${id}`);
     },
     // endpoint para concluir tarefas
-    async concluirTarefa(id: string, status: boolean): Promise<Tarefa> {
-        const response = await api.put(`/tarefas/${id}/concluir`, { status });
-        return response.data;
+    async concluirTarefa(id: string): Promise<Tarefa> {
+        const response = await api.patch(`/tarefas/${id}/concluir`);
+        return response.data.tarefa;
     },
 };
