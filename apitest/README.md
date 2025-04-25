@@ -10,15 +10,18 @@
 3 - Estrutura do node.js
     + mkdir "src"
     + cd src
-    + touch app.js // script para logica
-    + touch server.js // script para servidor
+    + touch app.js
     + mkdir controllers
     + cd controllers
-    + touch UsuariosController.js
+    + touch TarefasController.js
     + cd ..
     + mkdir routes
     + cd routes
-    + touch index.js
+    + touch TarefaRoutes.js
+    + cd ..
+    + mkdir "middlewares
+    + cd middlewares
+    + touch ValidacaoTarefa.js
 
 4 - Script para rodar com nodemon -> package.json
 {
