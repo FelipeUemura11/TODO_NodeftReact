@@ -23,19 +23,19 @@
     + cd middlewares
     + touch ValidacaoTarefa.js
 
-4 - Script para rodar com nodemon -> package.json
+4 - Script para rodar com nodemon e typme EsModules-> package.json
 {
   "name": "backapi",
-  "type": "module",
+  "type": "module", <---
   "packageManager": "yarn@4.6.0",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2"
   },
-  "devDependencies": {
+  "devDependencies": { <---
     "nodemon": "^3.1.9"
   },
-  "scripts": {
+  "scripts": { <---
     "dev": "nodemon ./src/app.js"
   }
 }
